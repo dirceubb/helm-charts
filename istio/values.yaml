@@ -1,7 +1,7 @@
-global:
-  defaultResources:
-    requests:
-      cpu: 20m
+# global:
+#   defaultResources:
+#     requests:
+#       cpu: 10m
     #   memory: 128Mi
     # limits:
     #   cpu: 100m
