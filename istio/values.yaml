@@ -1,22 +1,4 @@
 global:
-  # Used to locate istiod.
-  istioNamespace: istio-system
-  # List of cert-signers to allow "approve" action in the istio cluster role
-  #
-  # certSigners:
-  #   - clusterissuers.cert-manager.io/istio-ca
-  certSigners: []
-  # enable pod disruption budget for the control plane, which is used to
-  # ensure Istio control plane components are gradually upgraded or recovered.
-  defaultPodDisruptionBudget:
-    enabled: true
-    # The values aren't mutable due to a current PodDisruptionBudget limitation
-    # minAvailable: 1
-
-  # A minimal set of requested resources to applied to all deployments so that
-  # Horizontal Pod Autoscaler will be able to function (if set).
-  # Each component can overwrite these default values by adding its own resources
-  # block in the relevant section below and setting the desired resources values.
   defaultResources:
     requests:
       cpu: 20m
